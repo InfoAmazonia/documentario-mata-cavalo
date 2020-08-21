@@ -4584,7 +4584,7 @@
 
 
 if (false) {
-  module.exports = require('./cjs/react.production.min.js');
+  module.exports = require('./cjs/react.production.min.js.js');
 } else {
   module.exports = __webpack_require__(380);
 }
@@ -6980,7 +6980,7 @@ if (false) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = require('./cjs/react-dom.production.min.js');
+  module.exports = require('./cjs/react-dom.production.min.js.js');
 } else {
   module.exports = __webpack_require__(381);
 }
@@ -78408,7 +78408,7 @@ if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
 		module.hot.accept("!!../../css-loader/index.js!./index.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./index.css");
+			var newContent = require("css-loader/index.js!./index.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -87532,7 +87532,7 @@ if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
 		module.hot.accept("!!../../css-loader/index.js!./font-awesome.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./font-awesome.css");
+			var newContent = require("css-loader/index.js!./font-awesome.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -87636,7 +87636,7 @@ if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
 		module.hot.accept("!!../../node_modules/css-loader/index.js!./global.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./global.css");
+			var newContent = require("node_modules/css-loader/index.js!./global.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
