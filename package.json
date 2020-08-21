@@ -1,5 +1,5 @@
 {
-  "homepage": "http://infoamazonia.github.io/documentario-mata-cavalo",
+  "homepage": "https://infoamazonia.github.io/documentario-mata-cavalo",
   "name": "infoamazonia",
   "version": "0.0.0",
   "description": "",
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/studiocuboweb/infoamazonia-por-dentro-da-floresta.git"
+    "url": "https://github.com/InfoAmazonia/documentario-mata-cavalo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/studiocuboweb/infoamazonia-por-dentro-da-floresta/issues"
+    "url": "https://github.com/InfoAmazonia/documentario-mata-cavalo/issues"
   },
   "dependencies": {
     "axios": "^0.17.1",
