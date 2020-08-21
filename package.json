@@ -1,15 +1,18 @@
 {
+  "homepage": "http://infoamazonia.github.io/documentario-mata-cavalo",
   "name": "infoamazonia",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "clean" : "gh-pages-clean",
     "start": "./node_modules/.bin/webpack-dev-server --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "rm -rf public/*",
     "build": "webpack --config webpack.config.js -p",
     "watch": "npm run setup && webpack --config webpack.config.js --watch",
-    "deploy": "npm run build && cp public/index.html public/404.html && gh-pages -d public",
     "manage:translations": "node ./translationRunner.js",
     "dev": "./node_modules/.bin/webpack-dev-server --content-base"
   },
@@ -22,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/studiocuboweb/infoamazonia-por-dentro-da-floresta/issues"
   },
-  "homepage": "https://github.com/studiocuboweb/infoamazonia-por-dentro-da-floresta#readme",
   "dependencies": {
     "axios": "^0.17.1",
     "calvinclaus-rc-slider": "7.3.0",
@@ -72,7 +74,7 @@
     "css-loader": "^0.28.7",
     "favicons-webpack-plugin": "^0.0.7",
     "file-loader": "^1.1.4",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^3.1.0",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "imports-loader": "^0.7.1",
