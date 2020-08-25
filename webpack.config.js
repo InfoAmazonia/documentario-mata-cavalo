@@ -13,21 +13,21 @@ let config = {
     modules: ["src", "files", "node_modules"]
   },
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "docs"),
     inline: true,
     compress: true,
     host: '0.0.0.0',
     port: 8080
   },  
   output: {
-    path: path.join(__dirname, "public"),
+    path: path.join(__dirname, "docs"),
     // publicPath: path.join(__dirname, "public/"),
     filename: "[name]-[chunkhash].js"
   },
   plugins: [
     new webpack.DefinePlugin({
       "process.env": {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV || ""),
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || "production"),
         SITE_URL: JSON.stringify(process.env.SITE_URL || ""),
         DEFAULT_CREDITS: JSON.stringify(process.env.DEFAULT_CREDITS || ""),
         GOOGLE_ANALYTICS: JSON.stringify(process.env.GOOGLE_ANALYTICS || ""),

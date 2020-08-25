@@ -10,7 +10,7 @@
     "clean" : "gh-pages-clean",
     "start": "./node_modules/.bin/webpack-dev-server --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "rm -rf public/*",
+    "setup": "rm -rf docs/*",
     "build": "webpack --config webpack.config.js -p",
     "watch": "npm run setup && webpack --config webpack.config.js --watch",
     "manage:translations": "node ./translationRunner.js",
