@@ -40,9 +40,10 @@ class Application extends Component {
         <Head />
         <TransitionGroup>
           <CSSTransition key={key} classNames="route-transition" timeout={800}>
+            {/* <HashRouter basename={window.location.pathname || ''}> */}
             <Switch location={location}>
               <Route exact path="/" component={Landing} />
-              <Route path="/story" component={Story} />
+              <Route exact path="/story" component={Story} />
               <Route exact path="/about" component={About} />
               <Route exact path="/share" component={Share} />
               <Route
