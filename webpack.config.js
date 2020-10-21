@@ -89,10 +89,10 @@ const favicons = new FaviconsWebpackPlugin({
 });
 
 const pwa = new WebpackPwaManifest({
-  name: "A Veneza de Belo Monte",
-  short_name: "A Veneza de Belo Monte",
+  name: "Documentário O Mata Cavalo",
+  short_name: "Documentário O Mata Cavalo",
   description:
-    "Lorem",
+    "Documentário O Mata Cavalo",
   background_color: "#fff",
   orientation: "portrait",
   start_url: "/?launcher=true",
