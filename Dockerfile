@@ -17,9 +17,9 @@ ENV NODE_ENV $NODE_ENV
 
 COPY . /usr/src/app
 
-# RUN npm install
-# RUN yarn global add webpack@^3.6.0
-# RUN yarn
+RUN npm install
+RUN yarn global add webpack@^3.6.0
+RUN yarn
 
 # RUN yarn global add webpack-cli@^1.0
 
